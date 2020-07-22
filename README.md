@@ -6,3 +6,4 @@
 
 ###### ArrayLists
 ###### LinkedLists
+###### DoublyLinkedLists
