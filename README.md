@@ -5,6 +5,7 @@
 ## Lists
 
 ###### ArrayLists
+###### Vectors
 ###### LinkedLists
 ###### DoublyLinkedLists
 ###### JDKLinkedLists
