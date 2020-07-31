@@ -36,5 +36,6 @@
 #### Sort Algorithms
 
 ###### Bubble Sort
+###### Selection Sort
 
 
