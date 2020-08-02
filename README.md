@@ -38,5 +38,9 @@
 ###### Bubble Sort
 ###### Selection Sort
 ###### Insertion Sort
+###### Shell Sort
+###### Recursion
+###### Merge Sort
+###### Quick Sort
 
 
