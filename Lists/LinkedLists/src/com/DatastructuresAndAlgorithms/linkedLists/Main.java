@@ -7,7 +7,7 @@ public class Main {
 //        LinkedList is a data structure.
 //        It is a sequential list of objects.
 //        But here, arrays are not involved.
-//        In LinkedList, each item is aware of another item in the list.
+//        In LinkedList, each item is aware of the next item in the list.
 //        Because, each item contains a link to next item in the list.
 //        This is different from arrays and lists that are backed by arrays.
 //
@@ -22,7 +22,7 @@ public class Main {
 //        In lists, once array which is created in the background of the list is full, the array needs to be resized.
 
 //        One disadvantage with LinkedList is we have to store that extra field with every value.
-//        Hence it consumes more memory.
+//        Hence, it consumes more memory.
 
 
 
@@ -46,9 +46,5 @@ public class Main {
         employeeLinkedList.removeFromFront();
         System.out.println("List size : " + employeeLinkedList.getSize());
         employeeLinkedList.printList();
-
-
-
-
     }
 }

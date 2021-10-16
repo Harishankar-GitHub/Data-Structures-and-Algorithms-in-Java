@@ -46,9 +46,7 @@ public class EmployeeLinkedList {
             System.out.print(current);
             System.out.println(" -> ");
             current = current.getNext();
-
         }
         System.out.println("null");
-
     }
 }

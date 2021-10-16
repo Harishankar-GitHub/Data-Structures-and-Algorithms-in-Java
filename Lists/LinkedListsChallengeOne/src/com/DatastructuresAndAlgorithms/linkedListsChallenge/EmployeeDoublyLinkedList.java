@@ -1,7 +1,5 @@
 package com.DatastructuresAndAlgorithms.linkedListsChallenge;
 
-import java.security.UnrecoverableEntryException;
-
 public class EmployeeDoublyLinkedList {
 
     private EmployeeNode head;

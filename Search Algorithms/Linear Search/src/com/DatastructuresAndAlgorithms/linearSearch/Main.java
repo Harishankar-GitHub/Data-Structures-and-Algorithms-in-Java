@@ -14,16 +14,12 @@ public class Main {
         System.out.println(linearSearch(intArray, -22));
     }
 
-    public static int linearSearch(int[] input, int value)
-    {
-        for(int i = 0; i < input.length; i++)
-        {
-            if (input[i] == value)
-            {
+    public static int linearSearch(int[] input, int value) {
+        for(int i = 0; i < input.length; i++) {
+            if (input[i] == value) {
                 return i;
             }
         }
-
         return -1;
     }
 }

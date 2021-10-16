@@ -4,13 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //  Binary Search
-        //
+        //  Binary Search:
         //  Data must be sorted!
-        //  Choose the element in the middle of the array and compares it against the search value.
-        //  If middle element is equal to that value, we are done.
-        //  If middle element is greater than the value, search the left half of the array.
-        //  if middle element is less than the value, search the right half of the array.
+        //  Chooses the element in the middle of the array and compares it against the search value.
+        //  If the middle element is equal to that value, we are done.
+        //  If the middle element is greater than the value, search the left half of the array.
+        //  if the middle element is less than the value, search the right half of the array.
         //  Time Complexity is O(logn) because, we are dividing the array.
 
         int[] intArray = {-22, -15, 1, 7, 20, 35, 55};
@@ -39,11 +38,13 @@ public class Main {
             int midPoint = (start + end) / 2;
             System.out.println("Midpoint = " + midPoint);
 
-            if (input[midPoint] == value)
+            int valueInMidPoint = input[midPoint];
+
+            if (valueInMidPoint == value)
             {
                 return midPoint;
             }
-            else if (input[midPoint] < value)
+            else if (valueInMidPoint < value)
             {
                 start = midPoint + 1;
             }
@@ -52,7 +53,6 @@ public class Main {
                 end = midPoint;
             }
         }
-
         return -1;
     }
 
@@ -65,17 +65,19 @@ public class Main {
             return -1;
         }
 
-        int midpoint = (start + end) / 2;
-        System.out.println("midpoint = " + midpoint);
+        int midPoint = (start + end) / 2;
+        System.out.println("midpoint = " + midPoint);
 
-        if (input[midpoint] == value) {
-            return midpoint;
+        int valueInMidPoint = input[midPoint];
+
+        if (valueInMidPoint == value) {
+            return midPoint;
         }
-        else if (input[midpoint] < value) {
-            return recursiveBinarySearch(input, midpoint + 1, end, value);
+        else if (valueInMidPoint < value) {
+            return recursiveBinarySearch(input, midPoint + 1, end, value);
         }
         else {
-            return recursiveBinarySearch(input, start, midpoint, value);
+            return recursiveBinarySearch(input, start, midPoint, value);
         }
     }
 }
